@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+    background: #444;
+    font-family: Lato, serif;
+    font-size: 1.8rem;
+}
+
+/*searching field and header*/
+.wiki-viewer {
+    color: #fff;
+    max-width: 70%;
+    margin: 0 auto;
+    height: 500px;
+    text-align: center;
+}
+.viewer-content-text {
+    margin: 1%;
+}
+.wiki-viewer h1 {
+    font-size: 4rem;
+    margin: 1.5%;
+}
+.wiki-viewer a {
+    color: #FFA700;
+    text-decoration: none;
+    font-size: 2.2rem;
+}
+.viewer-search-field, .viewer-get-random {
+    margin: 0.5% auto;
+    display: block;
+    border-radius: 7px;
+    background: transparent;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+    border: 3px solid transparent;
+    width: 350px;
+}
+.viewer-get-random:hover {
+    border: 3px solid #FFA700;
+    border-radius: 15px;
+}
+.wiki-viewer input {
+    color: #FFA700;
+    background: #fff;
+    border-radius: 0;
+    border:  4px solid #fff;
+}
+.wiki-viewer input:focus {
+    border:  4px solid #FFA700;
+}
+.wiki-viewer label {
+    position: relative;
+}
+/*searching field and header end*/
+
+/*articles*/
+.article {
+    display: block;
+    padding: 0.5% 2%;
+    background: #fff;
+    margin: 1.5%;
+    border-left: 7px solid #FFA700;
+}
+.article-content, .article-head {
+    text-align: left;
+    margin: 0.5% 0;
+}
+.article-content{
+    color: #444;
+    font-size: 1.5rem;
+}
+/*articles end*/
+@media screen and (max-width:991px) {
+    .wiki-viewer {
+        max-width: 100%;
+    }
+}

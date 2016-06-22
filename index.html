@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Viewer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wiki-viewer">
+    <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">
+        <img src="img/wiki-logo-orange.png" alt="logo">
+    </a>
+    <h1>Wiki search</h1>
+    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="viewer-get-random">Get a random article</a>
+    <p class="viewer-content-text">or</p>
+    <input type="text" class="viewer-search-field" id="searchField" placeholder="search here..." >
+    <div id="searchResult"></div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
