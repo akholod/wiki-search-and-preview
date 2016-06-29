@@ -33,16 +33,13 @@ $(function(){
             return 'en'
         }
     }
-    searchField.on('focus', function() {
-        console.log('focus');
-        $(this).keyup(function(){
-            var searchText = $(this).val();
-            if (searchText.length > 2) {
-                console.log(searchText);
-                wikiSearch(searchText, isCyrillic(searchText));
-            } else {
-                searchResult.html('')
-            }
-        });
-    });
+    searchField.keyup(function(){
+        var searchText = $(this).val();
+        if (searchText.length > 2) {
+            console.log(searchText);
+            wikiSearch(searchText, isCyrillic(searchText));
+        } else {
+            searchResult.html('')
+        }
+     });
 });
